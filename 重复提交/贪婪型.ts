@@ -5,7 +5,7 @@ export class firstMap {
     get(key, value) {
         if (this.map.has(key) === false)
             this.map.set(key, value)
-        return this.map.get(key)
+        return this.map.get(key) 
     }
 }
 
@@ -51,8 +51,3 @@ export class Await100ms extends Await{
     }
 }
 
-let aw=new Await100ms()
-
-function test(){
-    console.log(Date.now())
-}

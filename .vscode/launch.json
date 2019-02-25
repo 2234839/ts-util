@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/js/重复提交.js",
+            "program": "${workspaceFolder}/js/app.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
