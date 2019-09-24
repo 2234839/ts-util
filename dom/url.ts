@@ -1,6 +1,6 @@
 
 namespace _URL {
-    /** 解析url中的参数 */
+    /** 解析url中的参数  */
     export function getParameters(url: string) {
         let obj = url.match(/([^?=&]+)(=([^&]*))/g)
 
