@@ -2,10 +2,10 @@
 
 export class firstMap {
     map = new Map()
-    get(key, value) {
+    get(key:string, value:any) {
         if (this.map.has(key) === false)
             this.map.set(key, value)
-        return this.map.get(key) 
+        return this.map.get(key)
     }
 }
 
@@ -16,8 +16,7 @@ export class firstMap {
  * 将等待到time ms没有被调用的时候执行run方法接收的参数
  */
 class Await{
-    private time
-    constructor(time:Number){
+    constructor(private time:number){
         this.time=time
     }
     private s = Date.now()

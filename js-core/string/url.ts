@@ -1,7 +1,8 @@
 
-namespace _URL {
+export class _URL{
     /** 解析url中的参数  */
-    export function getParameters(url: string) {
+    static getParameters(url_str: string) {
+        const url=decodeURIComponent(url_str)
         let obj = url.match(/([^?=&]+)(=([^&]*))/g)
 
         if (obj === null) {
