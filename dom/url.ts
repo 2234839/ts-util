@@ -7,7 +7,7 @@ namespace _URL {
         if (obj === null) {
             return null
         }
-        return obj.reduce((a, v) => (a[v.slice(0, v.indexOf('='))] = v.slice(v.indexOf('=') + 1), a), {});
+        return obj.reduce((a:any, v) => (a[v.slice(0, v.indexOf('='))] = v.slice(v.indexOf('=') + 1), a), {});
     }
 
 }
