@@ -1,5 +1,5 @@
 /** 包裹promise,然后回以回调 */
-export function awaitPromis<T>( {
+export function awaitPromise<T>( {
     getPromise,
     /** 这里的也要描述类型？ */
     succeed = (r:T) => { },
@@ -9,7 +9,7 @@ export function awaitPromis<T>( {
 }:{
     /** 获取promise的手段,这个函数的this会和awaitPromise运行环境的this一致 */
     getPromise: (...arg:any) => Promise<T>,
-    /** prommise执行成功 */
+    /** promise执行成功 */
     succeed ?: (r: T) => void,
     /** promise执行失败 */
     error ?: (e:any) => void,
