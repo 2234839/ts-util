@@ -45,15 +45,3 @@ export function adap_promise<T extends {
 interface fun2 {
     ff<T>(par: T | undefined): T
 }
-
-adap_promise(wx.getSetting, {
-    success(a) {
-
-    }
-}).then(_r => {
-
-})
-type a = undefined | {}
-
-type c = b<a>
-
