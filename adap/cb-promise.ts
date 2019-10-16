@@ -46,4 +46,3 @@ export function adap_promise<T extends {
         })
     })
 }
-
