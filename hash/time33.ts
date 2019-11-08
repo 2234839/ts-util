@@ -7,6 +7,7 @@ export function hash_time33(text: string) {
     let hash = 5381,
         index = text.length;
     while (index) {
+        ///@ts-ignore
         hash = (hash * 33) ^ text.codePointAt(--index);
     }
     return hash >>> 0;
@@ -18,7 +19,7 @@ export function hash_time33(text: string) {
 */
 if (!String.prototype.codePointAt) {
     (function () {
-        var codePointAt = function (this: any, position) {
+        var codePointAt = function (this: any, position:any) {
             if (this == null) {
                 throw TypeError();
             }
