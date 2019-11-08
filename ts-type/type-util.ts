@@ -31,3 +31,6 @@ type I_test_select_d=Pick<I_test,"d">
 
 //复用类型 使用 Omit 来剔除 不需要的类型
 // type I_test_remove_a=Omit<I_test,'a'>
+
+export type Diff<T, U> = T extends U ? never : T;  // Remove types from T that are assignable to U
+export type Filter<T, U> = T extends U ? T : never;  // Remove types from T that are not assignable to U
