@@ -1,6 +1,6 @@
 {
   "name": "@llej/js_util",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^3.7.3"
-  }
+  },
+  "files": [
+    "dist/",
+    "src/ts-type/"
+  ]
 }
