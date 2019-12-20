@@ -1,9 +1,10 @@
 {
-  "name": "js_util",
+  "name": "@llej/js_util",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,5 +12,8 @@
     "url": "git@git.dev.tencent.com:sheng_gu/js_util.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  }
 }
