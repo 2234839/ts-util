@@ -2,22 +2,22 @@
   "name": "@llej/js_util",
   "version": "1.0.5",
   "description": "",
-  "main": "dist/index.js",
+  "main": "./src/index.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.dev.tencent.com:sheng_gu/js_util.git"
+    "url": "git@github.com:2234839/ts-util.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "typescript": "^3.7.3"
-  },
   "files": [
     "dist/",
     "src/ts-type/"
-  ]
+  ],
+  "devDependencies": {
+    "tsup": "^8.0.2"
+  }
 }
