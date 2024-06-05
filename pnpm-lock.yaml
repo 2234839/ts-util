@@ -7,10 +7,14 @@ settings:
 importers:
 
   .:
+    dependencies:
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
     devDependencies:
       tsup:
         specifier: ^8.1.0
-        version: 8.1.0
+        version: 8.1.0(typescript@5.4.5)
 
 packages:
 
@@ -664,6 +668,11 @@ packages:
       typescript:
         optional: true
 
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
 
@@ -1214,7 +1223,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsup@8.1.0:
+  tsup@8.1.0(typescript@5.4.5):
     dependencies:
       bundle-require: 4.2.1(esbuild@0.21.4)
       cac: 6.7.14
@@ -1230,9 +1239,13 @@ snapshots:
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
+    optionalDependencies:
+      typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
       - ts-node
+
+  typescript@5.4.5: {}
 
   webidl-conversions@4.0.2: {}
 
