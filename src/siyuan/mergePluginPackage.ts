@@ -16,7 +16,7 @@ type plugin = {
 };
 export function mergePluginPackage(pkg: pkg, plugin: plugin) {
   return {
-    ...pkg,
+    ...plugin,
     version: pkg.version,
     name: pkg.name,
     url: pkg.repository,
